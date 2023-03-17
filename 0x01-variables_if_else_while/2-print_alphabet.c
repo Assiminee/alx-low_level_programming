@@ -1,10 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: always 0
  */
 int main(void)
 {
@@ -13,10 +12,8 @@ int main(void)
 
         for (i = 97; i <= 122; i++)
         {
-                putchar(i);
+            putchar(i);
         }
-
         putchar(j);
-
         return (0);
 }
