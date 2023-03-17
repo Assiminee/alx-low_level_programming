@@ -15,8 +15,11 @@ int main(void)
 	for (i = 48; i <= 57; i++)
 	{
 		putchar(i);
-		putchar(y);
-		putchar(x);
+		if (i != 57)
+		{
+			putchar(y);
+			putchar(x);
+		}
 	}
 
 	putchar(j);
