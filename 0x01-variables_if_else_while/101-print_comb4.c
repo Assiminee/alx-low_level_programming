@@ -8,12 +8,12 @@
 int main(void)
 {
 	int i;
-       	int j;
+	int j;
 	int k;
 	int x = 10;
 	int y = 44;
 	int z = 32;
-	
+
 	for (i = 48; i <= 57; i++)
 	{
 		for (j = 48; j <= 57; j++)
@@ -29,12 +29,12 @@ int main(void)
 						putchar(k);
 						if (i == 55 && j == 56 && k == 57)
 						{
-							continue;
+						continue;
 						}
 						else
 						{
-							putchar(y);
-							putchar(z);
+						putchar(y);
+						putchar(z);
 						}
 					}
 				}
