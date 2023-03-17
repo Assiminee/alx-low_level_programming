@@ -17,8 +17,8 @@ int main(void)
 		putchar(i);
 		if (i != 57)
 		{
-			putchar(y);
 			putchar(x);
+			putchar(y);
 		}
 	}
 
