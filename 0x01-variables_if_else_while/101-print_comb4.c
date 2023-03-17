@@ -24,18 +24,18 @@ int main(void)
 				{
 					if (j != k && j < k)
 					{
-						putchar(i);
-						putchar(j);
-						putchar(k);
-						if (i == 55 && j == 56 && k == 57)
-						{
-						continue;
-						}
-						else
-						{
-						putchar(y);
-						putchar(z);
-						}
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (i == 55 && j == 56 && k == 57)
+					{
+					continue;
+					}
+					else
+					{
+					putchar(y);
+					putchar(z);
+					}
 					}
 				}
 			}
