@@ -10,7 +10,7 @@ int main(void)
 	int i;
 	int j = 10;
 
-	for (i = 97; i <=122; i++)
+	for (i = 97; i <= 122; i++)
 	{
 		if (i == 101 || i == 113)
 			continue;
