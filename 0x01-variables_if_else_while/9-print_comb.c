@@ -17,12 +17,12 @@ int main(void)
 		putchar(i);
 		if (i != 57)
 		{
-			putchar(x);
-			putchar(y);
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
-	putchar(j);
+	putchar('\n');
 
 	return (0);
 }
