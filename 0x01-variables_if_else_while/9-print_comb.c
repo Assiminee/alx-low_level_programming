@@ -8,9 +8,6 @@
 int main(void)
 {
 	int i;
-	int j = 10;
-	int x = 44;
-	int y = 32;
 
 	for (i = 48; i <= 57; i++)
 	{
