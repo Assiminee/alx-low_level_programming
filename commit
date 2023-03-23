@@ -1,2 +1,2 @@
 #!/bin/bash
-git commit -m "First C Programming Project"
+git commit -m "C - Functions, nested loops"
