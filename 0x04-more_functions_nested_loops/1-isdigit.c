@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * _idigit - checks if character is
- * a digit (0-9) or not.
+ * _idigit - checks if digit
  * @c: character to check
  * Return: 1 or 0
  */
