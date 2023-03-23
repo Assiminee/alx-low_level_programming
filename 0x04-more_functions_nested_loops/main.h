@@ -34,8 +34,13 @@ int mul(int a, int b);
  */
 void print_numbers(void);
 /**
- * print_numbers - prints numbers
+ * print_most_numbers - prints numbers
  * 0 through 9 except 2 and 4
  */
 void print_most_numbers(void);
+/**
+ * more_numbers - prints numbers
+ * 0 through 14 ten times
+ */
+void more_numbers(void);
 #endif
