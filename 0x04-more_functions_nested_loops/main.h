@@ -43,4 +43,10 @@ void print_most_numbers(void);
  * 0 through 14 ten times
  */
 void more_numbers(void);
+/**
+ * print_line - prints line
+ * @n: number of times  _ 
+ * should be printed
+ */
+void print_line(int n);
 #endif
