@@ -49,4 +49,10 @@ void more_numbers(void);
  * should be printed
  */
 void print_line(int n);
+/**
+ * print_diagonal - prints 
+ * diagonal line.
+ * @n: number of \
+ */
+void print_diagonal(int n);
 #endif
