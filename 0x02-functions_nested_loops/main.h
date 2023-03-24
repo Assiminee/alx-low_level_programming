@@ -1,19 +1,10 @@
-#include <stdio.h>
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
 /**
- * void function _putchar
- *
- * 
- *
+ * _putchar - writes the character c
+ * to stdout
+ * @c: parameter to compare
+ * Return: 1 or 0
  */
-void _putchar(void)
-{
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
-}
+int _putchar(char c);
+#endif
