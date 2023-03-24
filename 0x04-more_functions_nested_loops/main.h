@@ -65,4 +65,10 @@ void print_square(int size);
  * @size: size of triangle.
  */
 void print_triangle(int size);
+/**
+ * print_number - prints number using putchar
+ * @n: number to be printed
+ * return: none
+ */
+void print_number(int n);
 #endif
