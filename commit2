@@ -1,2 +1,2 @@
 #!/bin/bash
-git commit -m "C - Variables, if, else, while"
+git commit -m "C - Debugging"
