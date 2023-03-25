@@ -35,10 +35,17 @@ int _islower(int c);
  */
 int _isalpha(int c);
 /**
- * print sign - prints sign based on input
+ * print_sign - prints sign based on input
  * @n: number to check 
  *
  * Return: 1, 0, or -1 
  */
 int print_sign(int n);
+/**
+ * _abs - computes the absolute value of an integer.
+ * @: int to compute
+ *
+ * Return: absolute value of int
+ */
+int _abs(int);
 #endif
