@@ -27,4 +27,11 @@ void print_alphabet_x10(void);
  * return: 1 or 0
  */
 int _islower(int c);
+/**
+ * _isalpha - checks if character is alphabet
+ * @c: character to be chacked
+ *
+ * return: 1 if alpha, 0 otherwise
+ */
+int _isalpha(int c);
 #endif
