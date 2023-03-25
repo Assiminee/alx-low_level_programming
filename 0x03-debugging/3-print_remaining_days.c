@@ -17,16 +17,13 @@ void print_remaining_days(int month, int day, int year)
 
 	if (year % 4 == 0)
 	{
-		if (year % 100 == 0)
+		if (year % 400 == 0)
 		{
-			if (year % 400 == 0)
+			checker = 1
+			if (year % 100 == 0)
 			{
-				checker = 1;
+				checker = 0;
 			}
-		}
-		else
-		{
-			checker = 1;
 		}
 	}
 	if (checker)
