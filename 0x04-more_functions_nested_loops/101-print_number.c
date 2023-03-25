@@ -27,7 +27,7 @@ void print_number(int n)
 	}
 	while (tmp2)
 	{
-		_putchar(((unsigned int) n/tmp2)%10 + '0');
+		_putchar(((unsigned int) n / tmp2) % 10 + '0');
 		tmp2 /= 10;
 	}
 }
