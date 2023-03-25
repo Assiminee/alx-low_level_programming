@@ -34,4 +34,11 @@ int _islower(int c);
  * return: 1 if alpha, 0 otherwise
  */
 int _isalpha(int c);
+/**
+ * print sign - prints sign based on input
+ * @n: number to check 
+ *
+ * Return: 1, 0, or -1 
+ */
+int print_sign(int n);
 #endif
