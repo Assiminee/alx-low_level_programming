@@ -26,7 +26,14 @@ void swap_int(int *a, int *b);
  * _strlen - return length of string
  * @s: pointer to char
  *
- * return: int
+ * Return: length number of string
  */
 int _strlen(char *s);
+/**
+ * _puts - prints string followed by a new line to stdout
+ * @str: pointer to char
+ *
+ * Return: void
+ */
+void _puts(char *str);
 #endif
