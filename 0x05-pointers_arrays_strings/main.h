@@ -65,4 +65,12 @@ void puts_half(char *str);
  * Return: void
  */
 void print_array(int *a, int n);
+/**
+ * _strcpy - copies src to dest including null terminating char
+ * @dest: pointer to char. destination string.
+ * @src: pointer to char. src string.
+ *
+ * Return: pointer to dest
+ */
+char *_strcpy(char *dest, char *src);
 #endif
