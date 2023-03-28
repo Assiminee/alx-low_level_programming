@@ -1,14 +1,14 @@
 #include "main.h"
 #include <string.h>
 /**
- * put2 - prints every other char in string starting with the first one
+ * put2 - prints every other character of a string, starting with the first character
  * @str: pointer to char
  *
  * Return: void
  */
 void puts2(char *str)
 {
-	long unsigned int i;
+	unsigned long int i;
 
 	for (i = 0; i < strlen(str); i += 2)
 	{
