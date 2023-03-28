@@ -44,10 +44,17 @@ void _puts(char *str);
  */
 void print_rev(char *s);
 /**
- * put2 - prints every other char in string starting with the first one
+ * puts2 - prints every other char in string starting with the first one
  * @str: pointer to char
  *
  * Return: void
  */
 void puts2(char *str);
+/**
+ * puts_half - prints the second half of a string
+ * @str: pointer to char
+ *
+ * Return: void
+ */
+void puts_half(char *str);
 #endif
