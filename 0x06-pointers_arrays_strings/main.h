@@ -33,4 +33,12 @@ char *_strncat(char *dest, char *src, int n);
  * Return: destination string
  */
 char *_strncpy(char *dest, char *src, int n);
+/**
+ * _strcmp - compares two strings
+ * @s1: string to be compared
+ * @s2: string to compare s1 to
+ *
+ * Return: 0 if s1 == s2, negative value if s1 < s2, positive value if s1 > s2
+ */
+int _strcmp(char *s1, char *s2);
 #endif
