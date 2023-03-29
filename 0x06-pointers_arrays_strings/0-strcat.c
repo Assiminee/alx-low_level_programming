@@ -4,7 +4,7 @@
  * @dest: pointer to char
  * @src: pointer to char
  *
- * Return: pointer to char
+ * Return: destination string
  */
 char *_strcat(char *dest, char *src)
 {
@@ -14,16 +14,13 @@ char *_strcat(char *dest, char *src)
 	{
 		ptr++;
 	}
-
 	while (*src)
 	{
 		*ptr = *src;
 		src++;
 		ptr++;
 	}
-
 	*ptr = '\0';
-
 	return (dest);
-}	
+}
 
