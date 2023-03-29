@@ -80,4 +80,11 @@ char *_strcpy(char *dest, char *src);
  * Return: void
  */
 void rev_string(char *s);
+/**
+ * _atoi - converts a string to an integer.
+ * @s: pointer to char
+ *
+ * Return: int
+ */
+int _atoi(char *s);
 #endif
