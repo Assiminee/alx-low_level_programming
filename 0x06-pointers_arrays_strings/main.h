@@ -15,4 +15,13 @@ int _putchar(char c);
  * Return: pointer to char
  */
 char *_strcat(char *dest, char *src);
+/**
+ * _strncat - concatenates two strings up to n char
+ * @dest: destination string
+ * @src: src string
+ * @n: number of char to be appended
+ *
+ * Return: destination string
+ */
+char *_strncat(char *dest, char *src, int n);
 #endif
