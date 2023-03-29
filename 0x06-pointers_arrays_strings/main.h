@@ -41,4 +41,12 @@ char *_strncpy(char *dest, char *src, int n);
  * Return: 0 if s1 == s2, negative value if s1 < s2, positive value if s1 > s2
  */
 int _strcmp(char *s1, char *s2);
+/**
+ * reverse_array - reverses the content of an array of integers
+ * @a: pointer to array of integers
+ * @n: number of elements of the array
+ *
+ * Return: void
+ */
+void reverse_array(int *a, int n);
 #endif
