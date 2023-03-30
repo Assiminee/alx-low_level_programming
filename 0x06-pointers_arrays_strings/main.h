@@ -70,4 +70,11 @@ char *cap_string(char *);
  * Return: void
  */
 void print_number(int n);
+/**
+ * leet - encodes a string into 1337
+ * @: pointer to char
+ *
+ * Return: resulting string
+ */
+char *leet(char *);
 #endif
