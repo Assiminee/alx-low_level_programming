@@ -28,7 +28,7 @@ void print_number(int n)
 
 	while(numLength)
 	{
-		_putchar(((unsigned int) n / numLength) % 10 + '0');
+		_putchar(( n / numLength) % 10 + '0');
 		numLength /= 10;
 	}
 }
