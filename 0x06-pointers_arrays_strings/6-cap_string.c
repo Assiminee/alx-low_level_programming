@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * cap_string - capitalizes all words of a string
- * @: pointer to char
+ * @s: pointer to char
  *
  * Return: converted string
  */
@@ -10,7 +10,8 @@ char *cap_string(char *s)
 	int i;
 	int c;
 	int j;
-	char sep[15] = {'\0', '\t', '\n', ' ', '!', '"', '(', ')', ',', '.', ';', '?', '{', '}'};
+	char sep[15] = {'\0', '\t', '\n', ' ', '!', '"', 
+		'(', ')', ',', '.', ';', '?', '{', '}'};
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
