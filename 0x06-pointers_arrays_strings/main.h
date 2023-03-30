@@ -77,4 +77,11 @@ void print_number(int n);
  * Return: resulting string
  */
 char *leet(char *);
+/**
+ * rot13 - encodes a string using rot13
+ * @s: pointer to char
+ *
+ * Return: encoded string
+ */
+char *rot13(char *);
 #endif
