@@ -63,4 +63,11 @@ char *string_toupper(char *);
  * Return: converted string
  */
 char *cap_string(char *);
+/**
+ * print_number - prints an integer
+ * @n: int to be printed
+ *
+ * Return: void
+ */
+void print_number(int n);
 #endif
