@@ -17,6 +17,10 @@ void print_number(int n)
 		n = (unsigned int) -n;
 		_putchar('-');
 	}
+	else
+	{
+		n = (unsigned int) n;
+	}
 
 	tmp = n;
 
