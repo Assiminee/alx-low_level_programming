@@ -84,4 +84,14 @@ char *leet(char *);
  * Return: encoded string
  */
 char *rot13(char *);
+/**
+ * infinite_add - adds every digit from n1 and n2 and stores the result in a buffer
+ * @n1: string containing numbers to be added
+ * @n2: string containing numbers to be added
+ * @r: buffer to store result
+ * @size_r: buffer size
+ *
+ * Return: buffer
+ */
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
 #endif
