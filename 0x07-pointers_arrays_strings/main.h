@@ -18,4 +18,12 @@ char *_memset(char *s, char b, unsigned int n);
  * Return: pointer to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
+/**
+ * _strchr - locates a character in a string
+ * @s: string to locate a character in
+ * @c: character to be located
+ *
+ * Return: pointer to the first occurrence of the character c in the string s
+ */
+char *_strchr(char *s, char c);
 #endif
