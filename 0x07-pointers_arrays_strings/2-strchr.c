@@ -9,20 +9,13 @@
  */
 char *_strchr(char *s, char c)
 {
-	int checker;
-
-	checker = 0;
 	while (*s)
 	{
 		if (*s == c)
 		{
-			checker = 1;
-			break;
+			return (s);
 		}
 		s++;
 	}
-	if (checker)
-		return (s);
-	else
-		return (NULL);
+	return (NULL);
 }
