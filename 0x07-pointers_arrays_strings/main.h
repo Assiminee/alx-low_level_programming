@@ -73,4 +73,12 @@ int _putchar(char c);
  * Return: void
  */
 void set_string(char **s, char *to);
+/**
+ * print_diagsums - prints sum of the two diagonals of a square matrix of ints
+ * @a: pointer t int
+ * @size: size of matrix
+ *
+ * Return: void
+ */
+void print_diagsums(int *a, int size);
 #endif
