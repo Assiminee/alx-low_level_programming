@@ -43,4 +43,26 @@ unsigned int _strspn(char *s, char *accept);
  * or NULL if no such byte is found
  */
 char *_strpbrk(char *s, char *accept);
+/**
+ * _strstr - finds the first occurrence of substring needle in string haystack
+ * @haystack: string to be searched
+ * @needle: string to be searched for
+ *
+ * Return: pointer to the beginning of the located substring
+ */
+char *_strstr(char *haystack, char *needle);
+/**
+ * print_chessboard - prints the chessboard
+ * @a: pointer to char
+ *
+ * Return: void
+ */
+void print_chessboard(char (*a)[8]);
+/**
+ * _putchar - writes the character c
+ * to stdout
+ * @c: parameter to compare
+ * Return: 1 or 0
+ */
+int _putchar(char c);
 #endif
