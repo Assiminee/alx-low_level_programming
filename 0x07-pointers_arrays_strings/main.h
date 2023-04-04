@@ -26,4 +26,12 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  * Return: pointer to the first occurrence of the character c in the string s
  */
 char *_strchr(char *s, char c);
+/**
+ * _strspn - gets the length of a prefix substring
+ * @s: string to be searched
+ * @accept: string that contains the set of characters to search for
+ *
+ * Return: length of initial segment of s that contains only characters from accept
+ */
+unsigned int _strspn(char *s, char *accept);
 #endif
