@@ -4,7 +4,7 @@
  * @s: string to be searched
  * @accept: string that contains the set of characters to search for
  *
- * Return: length of initial segment of s that contains only characters from accept
+ * Return: length of initial segment of s that contains only chars from accept
  */
 unsigned int _strspn(char *s, char *accept)
 {
