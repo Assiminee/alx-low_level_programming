@@ -10,26 +10,27 @@
 void print_diagsums(int *a, int size)
 {
 	int i;
-	int j;
 	int sum1;
 	int sum2;
+	int *ptr1;
+	int *ptr2;
 
-	sum1 = 0;
+	ptr1 = a;
+	ptr2 = a;
+	sum1 = *ptr1;
 	sum2 = 0;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size - 1; i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-				sum1 += a[i][j];
-		}
+		ptr2++;
 	}
-	j = size - 1;
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size; i++, ptr1 += size + 1)
 	{
-		sum2 += a[i][j];
-		j--;
+		sum1 += *ptr1;
 	}
-	printf("%d, %d", sum1, sum2);
+	for (i = 0; i < size; i++, ptr2 += (size - 1))
+	{
+		sum2 += *ptr2;
+	}
+	printf("%d, %d\n", sum1, sum2);
 }
