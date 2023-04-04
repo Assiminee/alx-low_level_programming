@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagsums - prints sum of diagonals
- * @a: array to use
- * @size: size of diagonal
+ * print_diagsums - prints sum of the two diagonals of a square matrix of ints
+ * @a: pointer t int
+ * @size: size of matrix
  *
  * Return: void
  */
@@ -12,13 +12,25 @@ void print_diagsums(int *a, int size)
 	int i;
 	int sum1;
 	int sum2;
+	int *ptr1;
+	int *ptr2;
 
+	ptr1 = a;
+	ptr2 = a;
 	sum1 = 0;
 	sum2 = 0;
-	for (i = 0; i < size; i++)
+
+	for (i = 0; i < size - 1; i++)
 	{
-		sum1 += a[i * (size + 1)];
-		sum2 += a[(size - 1) * (i + 1)];
+		ptr2++;
+	}
+	for (i = 0; i < size; i++, ptr1 += size + 1)
+	{
+		sum1 += *ptr1;
+	}
+	for (i = 0; i < size; i++, ptr2 += (size - 1))
+	{
+		sum2 += *ptr2;
 	}
 	printf("%d, %d\n", sum1, sum2);
 }
