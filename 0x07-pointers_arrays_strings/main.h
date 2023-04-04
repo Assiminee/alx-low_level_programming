@@ -34,4 +34,13 @@ char *_strchr(char *s, char c);
  * Return: length of initial segment of s that contains only characters from accept
  */
 unsigned int _strspn(char *s, char *accept);
+/**
+ * _strpbrk - locates the first occurrence in s of any of the bytes in accept
+ * @s: string to be searched
+ * @c: string of characters to search for
+ *
+ * Return: pointer to the byte in s that matches one of the bytes in accept
+ * or NULL if no such byte is found
+ */
+char *_strpbrk(char *s, char *accept);
 #endif
