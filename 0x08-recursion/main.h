@@ -21,4 +21,11 @@ void _puts_recursion(char *s);
  * Return: void
  */
 void _print_rev_recursion(char *s);
+/**
+ * _strlen_recursion - returns the length of a string
+ * @s: pointer to char
+ *
+ * Return: length of s
+ */
+int _strlen_recursion(char *s);
 #endif
