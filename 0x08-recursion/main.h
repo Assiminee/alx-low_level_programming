@@ -43,4 +43,11 @@ int factorial(int n);
  * Return: result of x to the power of y
  */
 int _pow_recursion(int x, int y);
+/**
+ * _sqrt_recursion - returns natural square root of number
+ * @n: int
+ *
+ * Return: the natural square root of n
+ */
+int _sqrt_recursion(int n);
 #endif
