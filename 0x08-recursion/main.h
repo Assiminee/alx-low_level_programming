@@ -35,4 +35,12 @@ int _strlen_recursion(char *s);
  * Return: factorial of n
  */
 int factorial(int n);
+/**
+ * _pow_recursion - calculates x raised to the power of y
+ * @x: base number
+ * @y: the power raised
+ *
+ * Return: result of x to the power of y
+ */
+int _pow_recursion(int x, int y);
 #endif
