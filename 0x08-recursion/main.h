@@ -28,4 +28,11 @@ void _print_rev_recursion(char *s);
  * Return: length of s
  */
 int _strlen_recursion(char *s);
+/**
+ * factorial - returns the factorial of a given number
+ * @n: int
+ *
+ * Return: factorial of n
+ */
+int factorial(int n);
 #endif
