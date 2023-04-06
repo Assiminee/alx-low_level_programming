@@ -50,4 +50,11 @@ int _pow_recursion(int x, int y);
  * Return: the natural square root of n
  */
 int _sqrt_recursion(int n);
+/**
+ * is_prime_number - checks if an integer is a prime number
+ * @n: int to be checked
+ *
+ * Return: 1 if n is a prime number, 0 otherwise
+ */
+int is_prime_number(int n);
 #endif
