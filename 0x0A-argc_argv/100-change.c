@@ -9,48 +9,47 @@
  */
 int main(int argc, char** argv)
 {
+	int input;
 	int coins;
-	int arg;
 
 	coins = 0;
-	if (argc == 2)
+	if (argc != 2)
 	{
-		arg = atoi(argv[argc - 1]);
-		if (arg >= 0)
+		printf("Error\n");
+		return (1);
+	}
+
+	input = atoi(argv[1]);
+	if (input < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+
+	while (input)
+	{
+		if (input % 25 == 0)
 		{
-			while (arg)
-			{
-				if (arg % 25 == 0)
-				{
-					arg -= 25;
-				}
-				else if (arg % 10 == 0)
-				{
-					arg -= 10;
-				}
-				else if (arg % 5 == 0)
-				{
-					arg -= 5;
-				}
-				else if (arg % 2 == 0)
-				{
-					arg -= 2;
-				}
-				else
-				{
-					arg--;
-				}
-				coins++;
-			}
+			input -= 25;
+		}
+		else if (input % 10 == 0)
+		{
+			input -= 10;
+		}
+		else if (input % 5 == 0)
+		{
+			input -= 5;
+		}
+		else if (input % 2 == 0)
+		{
+			input -= 2;
 		}
 		else
 		{
-			printf("0\n");
-			return (1);
+			input--;
 		}
-		printf("%d\n", coins);
-		return (0);
+		coins++;
 	}
-	printf("Error\n");
-	return (1);
+	printf("%d\n", coins);
+	return (0);
 }
