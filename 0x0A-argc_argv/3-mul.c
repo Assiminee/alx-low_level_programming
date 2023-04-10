@@ -6,9 +6,9 @@
  * @argc: number of arguments in the command line
  * @argv: vector of arguments
  *
- * Return: Always 0 
+ * Return: Always 0
  */
-int main(int __attribute__((unused)) argc, char **argv)
+int main(int argc, char **argv)
 {
 	int n1;
 	int n2;
