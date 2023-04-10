@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 /**
  * main - adds positive numbers
  * @argc: number of arguments in the command line
@@ -12,22 +12,25 @@ int main(int argc, char **argv)
 {
 	int sum;
 	int i;
+	unsigned long int j;
+	char *arg;
 
 	sum = 0;
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] >= '0' && *argv[i] <= '9')
+			arg = argv[i];
+			for (j = 0; j < strlen(arg); j++)
 			{
-				sum += atoi(argv[i]);
+				if (arg[j] < '0' || arg[j] > '9')
+				{
+					printf("Error");
+					printf("\n");
+					return (1);
+				}
 			}
-			else
-			{
-				printf("Error");
-				printf("\n");
-				return (1);
-			}
+			sum += atoi(argv[i]);
 		}
 	}
 	printf("%d", sum);
