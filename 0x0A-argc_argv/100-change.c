@@ -11,10 +11,10 @@
  */
 int main(int argc, char** argv)
 {
-	int cents;
+	int coins;
 	int arg;
 
-	cents = 0;
+	coins = 0;
 	if (argc == 2)
 	{
 		arg = atoi(argv[argc - 1]);
@@ -38,12 +38,17 @@ int main(int argc, char** argv)
 				{
 					arg -= 2;
 				}
-				else if (arg % 1 == 0)
+				else
 				{
-					arg -= 1;
+					arg--;
 				}
-				cents++;
+				coins++;
 			}
+		}
+		else
+		{
+			printf("0\n");
+			return (1);
 		}
 	}
 	else
@@ -52,7 +57,7 @@ int main(int argc, char** argv)
 		printf("\n");
 		return (1);
 	}
-	printf("%d", cents);
+	printf("%d", coins);
 	printf("\n");
 	return (0);
 }
