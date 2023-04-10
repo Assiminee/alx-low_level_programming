@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
 /**
- * main - prints min number of coins to make change for an amount of money
+ * main - main function
  * @argc: number of arguments in the command line
  * @argv: vector of arguments
  *
@@ -50,14 +48,9 @@ int main(int argc, char** argv)
 			printf("0\n");
 			return (1);
 		}
+		printf("%d\n", coins);
+		return (0);
 	}
-	else
-	{
-		printf("Error");
-		printf("\n");
-		return (1);
-	}
-	printf("%d", coins);
-	printf("\n");
-	return (0);
+	printf("Error\n");
+	return (1);
 }
