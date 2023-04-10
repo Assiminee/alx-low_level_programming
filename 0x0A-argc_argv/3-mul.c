@@ -8,9 +8,9 @@
  *
  * Return: 0 if argc > 1, 1 if argc == 1 
  */
-int main(int __attribute__ ((unused))  argc, char **argv)
+int main(int __attribute__((unused)) argc, char **argv)
 {
-	int result;
+	long int result;
 	int i;
 
 	result = 1;
@@ -24,7 +24,7 @@ int main(int __attribute__ ((unused))  argc, char **argv)
 	{
 		result *= atoi(argv[i]);
 	}
-	printf("%d", result);
+	printf("%ld", result);
 	printf("\n");
 	exit (EXIT_SUCCESS);
 }
