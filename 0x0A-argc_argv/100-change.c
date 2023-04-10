@@ -9,7 +9,7 @@
  */
 int main(int argc, char** argv)
 {
-	int input;
+	int cents;
 	int coins;
 
 	coins = 0;
@@ -19,37 +19,21 @@ int main(int argc, char** argv)
 		return (1);
 	}
 
-	input = atoi(argv[1]);
-	if (input < 0)
+	cents = atoi(argv[1]);
+	if (cents < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-
-	while (input)
-	{
-		if (input % 25 == 0)
-		{
-			input -= 25;
-		}
-		else if (input % 10 == 0)
-		{
-			input -= 10;
-		}
-		else if (input % 5 == 0)
-		{
-			input -= 5;
-		}
-		else if (input % 2 == 0)
-		{
-			input -= 2;
-		}
-		else
-		{
-			input--;
-		}
-		coins++;
-	}
+	coins += cents/25;
+	cents %= 25;
+	coins += cents/10;
+	cents %= 10;
+	coins += cents/5;
+	cents %= 5;
+	coins += cents/2;
+	cents %= 2;
+	coins += cents;
 	printf("%d\n", coins);
 	return (0);
 }
