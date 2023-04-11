@@ -17,10 +17,20 @@ char *str_concat(char *s1, char *s2)
 	int j;
 	char *cat;
 
+	if (s1 == NULL && s2 == NULL)
+	{
+		return (NULL);
+	}
 	if (s1 == NULL)
-		s1 = '\0';
+	{
+		cat = s2;
+		return (cat);
+	}
 	if (s2 == NULL)
-		s2 = '\0';
+	{
+		cat = s1;
+		return (cat);
+	}
 	j = 0;
 	s1_size = _strlen_recursion(s1);
 	s2_size = _strlen_recursion(s2);
