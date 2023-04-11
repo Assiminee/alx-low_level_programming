@@ -21,8 +21,11 @@ int **alloc_grid(int width, int height)
 	full_grid = (int *)calloc(width * height, sizeof(int));
 	rows = (int **)calloc(height, sizeof(int *));
 	if (full_grid == NULL || rows == NULL)
+	{
+		free(full_grid);
+		free(rows);
 		return (NULL);
-
+	}
 	for (i = 0; i < height; i++)
 		rows[i] = full_grid + width * i;
 
