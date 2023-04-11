@@ -13,6 +13,7 @@ int **alloc_grid(int width, int height)
 {
 	int **rows;
 	int i;
+	int j;
 
 	if (height <= 0 || width <= 0)
 		return (NULL);
@@ -26,9 +27,10 @@ int **alloc_grid(int width, int height)
 	for (i = 0; i < height; i++)
 	{
 		rows[i] = (int *)calloc(width, sizeof(int));
+		j = i;
 		if (rows[i] == NULL)
 		{
-			for (i = 0; i < height; i++)
+			for (i = 0; i < j; i++)
 			{
 				free(rows[i]);
 			}
