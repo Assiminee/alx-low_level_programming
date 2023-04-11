@@ -9,4 +9,12 @@
  * Return: pointer to the first element of the array
  */
 char *create_array(unsigned int size, char c);
+/**
+ * _strdub - returns a pointer to a new string
+ * which is a duplicate of the string s
+ * @str: string to duplicate
+ *
+ * Return: pointer to the duplicated string
+ */
+char *_strdup(char *str);
 #endif
