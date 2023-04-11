@@ -11,31 +11,35 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int *full_grid;
 	int **rows;
 	int i;
+	int j;
 
 	if (height <= 0 || width <= 0)
 		return (NULL);
 
-	full_grid = (int *)calloc(width * height, sizeof(int));
-	if (full_grid == NULL)
-	{
-		free(full_grid);
-		return (NULL);
-	}
-	rows = (int **)calloc(height, sizeof(int *));
-	if (rows == NULL)
-	{
-		free(full_grid);
-		for (i = 0; i < height; i++)
-		{
-			free(rows[i]);
-		}
-		return (NULL);
-	}
+	rows = malloc(height * sizeof(int *));
 	for (i = 0; i < height; i++)
-		rows[i] = full_grid + width * i;
+	{
+		rows[i] = malloc(width * sizeof(int));
+		if (rows[i] == NULL)
+		{
+			for (j = 0; j <= i; j++)
+			{
+				free(rows[j]);
+			}
+			free(rows);
+			return (NULL);
+		}
+	}
+	
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			rows[i][j] = 0;
+		}
+	}
 
 	return (rows);
 }
