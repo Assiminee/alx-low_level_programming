@@ -19,10 +19,15 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 
 	full_grid = (int *)calloc(width * height, sizeof(int));
-	rows = (int **)calloc(height, sizeof(int *));
-	if (full_grid == NULL || rows == NULL)
+	if (full_grid == NULL)
 	{
 		free(full_grid);
+		return (NULL);
+	}
+	rows = (int **)calloc(height, sizeof(int *));
+	if (rows == NULL)
+	{
+		free(rows);
 		return (NULL);
 	}
 	for (i = 0; i < height; i++)
