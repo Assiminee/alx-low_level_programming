@@ -17,23 +17,39 @@ char *str_concat(char *s1, char *s2)
 	int j;
 	char *cat;
 
+	j = 0;
+
 	if (s1 == NULL && s2 == NULL)
 	{
-		return (NULL);
+		cat = malloc(sizeof(char));
+		cat[0] = '\0';
+		return (cat);
 	}
 	if (s1 == NULL)
 	{
-		cat = s2;
+		cat = malloc(_strlen_recursion(s2));
+		while (*s2)
+		{
+			cat[j] = *s2;
+			s2++;
+			j++;
+		}
 		return (cat);
 	}
 	if (s2 == NULL)
 	{
-		cat = s1;
+		cat = malloc(_strlen_recursion(s1));
+		while (*s1)
+		{
+			cat[j] = *s1;
+			s1++;
+			j++;
+		}
 		return (cat);
 	}
 	j = 0;
 	s1_size = _strlen_recursion(s1);
-	s2_size = _strlen_recursion(s2);
+	s2_size= _strlen_recursion(s2);
 	cat = malloc(s1_size + s2_size + 1);
 
 	if (cat == NULL)
