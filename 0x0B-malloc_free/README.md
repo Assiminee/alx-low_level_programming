@@ -28,7 +28,7 @@ Write a function that returns a pointer to a newly allocated space in memory, wh
 FYI: The standard library provides a similar function: strdup. Run man strdup to learn more.
 
 # 2. He who is not courageous enough to take risks will accomplish nothing in life
-## [2-str_concat.c]()
+## [2-str_concat.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x0B-malloc_free/2-str_concat.c)
 Write a function that concatenates two strings.
 
 + Prototype: char *str_concat(char *s1, char *s2);
@@ -36,5 +36,12 @@ Write a function that concatenates two strings.
 + if NULL is passed, treat it as an empty string
 + The function should return NULL on failure
 
-# 
+# 3. If you even dream of beating me you'd better wake up and apologize
+## [3-alloc_grid.c]()
+Write a function that returns a pointer to a 2 dimensional array of integers.
+
++ Prototype: int **alloc_grid(int width, int height);
++ Each element of the grid should be initialized to 0
++ The function should return NULL on failure
++ If width or height is 0 or negative, return NULL
 
