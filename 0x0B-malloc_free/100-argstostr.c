@@ -3,7 +3,7 @@
 #include <stdlib.h>
 int _strlen_recursion(char *s);
 /**
- * argststr - concatenates all the arguments of the program
+ * argstostr - concatenates all the arguments of the program
  * @ac: number of arguments in the command line
  * @av: vector of arguments
  *
