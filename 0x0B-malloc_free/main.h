@@ -34,4 +34,12 @@ char *str_concat(char *s1, char *s2);
  * Return: pointer to pointer
  */
 int **alloc_grid(int width, int height);
+/**
+ * free_grid - frees a 2 dimensional grid
+ * @grid: grid to free
+ * @height: rows of 2 dimentional grid
+ *
+ * Return: void
+ */
+void free_grid(int **grid, int height);
 #endif
