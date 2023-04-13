@@ -32,4 +32,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
  * Return: pointer to the allocated memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size);
+/*
+ * array_range - creates an array of integers
+ * @min: first value in array
+ * @man: last value in array
+ *
+ * Return: pointer to int
+ */
+int *array_range(int min, int max);
 #endif

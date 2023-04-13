@@ -36,7 +36,7 @@ Write a function that concatenates two strings.
 + if NULL is passed, treat it as an empty string
 
 # 2. _calloc
-## [2-calloc.c]()
+## [2-calloc.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x0C-more_malloc_free/2-calloc.c)
 Write a function that allocates memory for an array, using malloc.
 
 + Prototype: void *_calloc(unsigned int nmemb, unsigned int size);
@@ -45,3 +45,13 @@ Write a function that allocates memory for an array, using malloc.
 + If nmemb or size is 0, then _calloc returns NULL
 + If malloc fails, then _calloc returns NULL
 + FYI: The standard library provides a different function: calloc. Run man calloc to learn more.
+
+# 3. array_range
+## [3-array_range.c]()
+Write a function that creates an array of integers.
+
++ Prototype: int *array_range(int min, int max);
++ The array created should contain all the values from min (included) to max (included), ordered from min to max
++ Return: the pointer to the newly created array
++ If min > max, return NULL
++ If malloc fails, return NULL
