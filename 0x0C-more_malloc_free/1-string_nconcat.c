@@ -51,10 +51,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	ptr = malloc(mem_al);
 
 	if (ptr == NULL)
-	{
-		free(ptr);
 		return (NULL);
-	}
 
 	j = 0;
 	for (i = 0; i < mem_al; i++)
@@ -69,6 +66,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			j++;
 		}
 	}
+	ptr[i] = '\0';
 	return (ptr);
 }
 /*
