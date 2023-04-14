@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 char *_memset(char *s, char b, unsigned int n);
-/*
+/**
  * _calloc - allocates memory for an array and sets it to 0
  * @nmemb: number of elements
  * @size: size of elements
