@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-/*
+/**
  * array_range - creates an array of integers
  * @min: first value in array
  * @man: last value in array
