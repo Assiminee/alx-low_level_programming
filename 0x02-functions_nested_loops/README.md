@@ -136,4 +136,82 @@ julien@ubuntu:~/0x02$ ./9-times_table | tr ' ' . | cat -e
 ```
 
 # 10. a + b
-## 
+## [10-add.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/10-add.c)
+
+Write a function that adds two integers and returns the result.
++ Prototype: int add(int, int);
+
+# 11. 98 Battery Street, the OG
+## [11-print_to_98.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/11-print_to_98.c)
+
+Write a function that prints all natural numbers from n to 98, followed by a new line.
++ Prototype: void print_to_98(int n);
++ Numbers must be separated by a comma, followed by a space
++ Numbers should be printed in order
++ The first printed number should be the number passed to your function
++ The last printed number should be 98
++ You are allowed to use the standard library
+
+# 12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
+## [100-times_table.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/100-times_table.c)
+
+Write a function that prints the n times table, starting with 0.
++ Prototype: void print_times_table(int n);
++ If n is greater than 15 or less than 0 the function should not print anything
++ Format:
+```
+julien@ubuntu:~/0x02$ ./100-times_table 
+0,   0,   0,   0
+0,   1,   2,   3
+0,   2,   4,   6
+0,   3,   6,   9
+
+0,   0,   0,   0,   0,   0
+0,   1,   2,   3,   4,   5
+0,   2,   4,   6,   8,  10
+0,   3,   6,   9,  12,  15
+0,   4,   8,  12,  16,  20
+0,   5,  10,  15,  20,  25
+
+
+0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0
+0,   1,   2,   3,   4,   5,   6,   7,   8,   9,  10,  11,  12
+0,   2,   4,   6,   8,  10,  12,  14,  16,  18,  20,  22,  24
+0,   3,   6,   9,  12,  15,  18,  21,  24,  27,  30,  33,  36
+0,   4,   8,  12,  16,  20,  24,  28,  32,  36,  40,  44,  48
+0,   5,  10,  15,  20,  25,  30,  35,  40,  45,  50,  55,  60
+0,   6,  12,  18,  24,  30,  36,  42,  48,  54,  60,  66,  72
+0,   7,  14,  21,  28,  35,  42,  49,  56,  63,  70,  77,  84
+0,   8,  16,  24,  32,  40,  48,  56,  64,  72,  80,  88,  96
+0,   9,  18,  27,  36,  45,  54,  63,  72,  81,  90,  99, 108
+0,  10,  20,  30,  40,  50,  60,  70,  80,  90, 100, 110, 120
+0,  11,  22,  33,  44,  55,  66,  77,  88,  99, 110, 121, 132
+0,  12,  24,  36,  48,  60,  72,  84,  96, 108, 120, 132, 144
+julien@ubuntu:~/0x02$ ./100-times_table | tr ' ' . | cat -e
+0,...0,...0,...0$
+0,...1,...2,...3$
+0,...2,...4,...6$
+0,...3,...6,...9$
+$
+0,...0,...0,...0,...0,...0$
+0,...1,...2,...3,...4,...5$
+0,...2,...4,...6,...8,..10$
+0,...3,...6,...9,..12,..15$
+0,...4,...8,..12,..16,..20$
+0,...5,..10,..15,..20,..25$
+$
+$
+0,...0,...0,...0,...0,...0,...0,...0,...0,...0,...0,...0,...0$
+0,...1,...2,...3,...4,...5,...6,...7,...8,...9,..10,..11,..12$
+0,...2,...4,...6,...8,..10,..12,..14,..16,..18,..20,..22,..24$
+0,...3,...6,...9,..12,..15,..18,..21,..24,..27,..30,..33,..36$
+0,...4,...8,..12,..16,..20,..24,..28,..32,..36,..40,..44,..48$
+0,...5,..10,..15,..20,..25,..30,..35,..40,..45,..50,..55,..60$
+0,...6,..12,..18,..24,..30,..36,..42,..48,..54,..60,..66,..72$
+0,...7,..14,..21,..28,..35,..42,..49,..56,..63,..70,..77,..84$
+0,...8,..16,..24,..32,..40,..48,..56,..64,..72,..80,..88,..96$
+0,...9,..18,..27,..36,..45,..54,..63,..72,..81,..90,..99,.108$
+0,..10,..20,..30,..40,..50,..60,..70,..80,..90,.100,.110,.120$
+0,..11,..22,..33,..44,..55,..66,..77,..88,..99,.110,.121,.132$
+0,..12,..24,..36,..48,..60,..72,..84,..96,.108,.120,.132,.144$
+``` 
