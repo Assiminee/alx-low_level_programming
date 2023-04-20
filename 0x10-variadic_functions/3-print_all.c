@@ -50,6 +50,7 @@ void print_all(const char * const format, ...)
 	int i;
 	int j;
 	char *sep = "";
+	char *sep2 = ", ";
 	prints funcs[] = {
 		{"c", print_c},
 		{"i", print_i},
@@ -70,10 +71,10 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", sep);
 				funcs[j].f(args);
-				sep = ", ";
 			}
 			j++;
 		}
+		sep = sep2;
 		i++;
 	}
 	printf("\n");
