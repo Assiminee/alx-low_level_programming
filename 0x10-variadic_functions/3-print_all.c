@@ -1,16 +1,63 @@
 #include "variadic_functions.h"
 /**
  * print_c - prints char
- * @a: list to give
+ * @c: list to give
  * Return: void
+ */
+void print_c(va_list c)
+{
+	printf("%c", va_arg(c, int));
+}
+/**
+ * print_i - prints int
+ * @i: list to give
+ * Return: void
+ */
+void print_i(va_list i)
+{
+	printf("%i", va_arg(i, int));
+}
+/**
+ * print_f - prints float
+ * @f: list to give
+ * Return: void
+ */
+void print_f(va_list f)
+{
+	printf("%f", va_arg(f, double));
+}
+/**
+ * print_s - prints string
+ * @s: list to give
+ * Return: void
+ */
+void print_s(va_list s)
+{
+	char *str;
+
+	str = va_arg(s, char*);
+	if (str == NULL)
+		str = "(nil)";
+	printf("%s", str);
+}
+/**
+ * print_all - prints all
+ * @format: format string that says arg types
+ *
  */
 void print_all(const char * const format, ...)
 {
-	char *types = "cifs";
-	char *str;
 	int i;
 	int j;
-	int checker;
+	char *sep = ", ";
+	char *emptySep = "";
+	prints funcs[5] = {
+		{"c", print_c},
+		{"i", print_i},
+		{"f", print_f},
+		{"s", print_s},
+		{NULL, NULL}
+	};
 	va_list args;
 
 	va_start(args, format);
@@ -18,45 +65,16 @@ void print_all(const char * const format, ...)
 	while (format[i])
 	{
 		j = 0;
-		checker = 0;
-		while (types[j])
+		while (funcs[j].type != NULL)
 		{
-			if (format[i] == types[j])
+			if (format[i] == *(funcs[j].type))
 			{
-				checker = 1;
-				break;
+				printf("%s", emptySep);
+				funcs[j].f(args);
 			}
 			j++;
 		}
-		if (!checker)
-		{
-			i++;
-			continue;
-		}
-		switch (format[i])
-		{
-			case 'c':
-				printf("%c", va_arg(args, int));
-				break;
-			case 'i':
-				printf("%i", va_arg(args, int));
-				break;
-			case 'f':
-				printf("%f", va_arg(args, double));
-				break;
-			case 's':
-				str = va_arg(args, char*);
-				if (str == NULL)
-				{
-					str = "(nil)";
-				}
-				printf("%s", str);
-				break;
-		}
-		if (format[i + 1] != '\0')
-		{
-			printf(", ");
-		}
+		emptySep = sep;
 		i++;
 	}
 	va_end(args);
