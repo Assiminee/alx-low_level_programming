@@ -49,9 +49,8 @@ void print_all(const char * const format, ...)
 {
 	int i;
 	int j;
-	char *sep = ", ";
-	char *emptySep = "";
-	prints funcs[5] = {
+	char *sep = "";
+	prints funcs[] = {
 		{"c", print_c},
 		{"i", print_i},
 		{"f", print_f},
@@ -62,21 +61,22 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 	i = 0;
-	while (format != NULL && format[i])
+	while (format && format[i])
 	{
 		j = 0;
-		while (funcs[j].type != NULL)
+		while (funcs[j].type)
 		{
 			if (format[i] == *(funcs[j].type))
 			{
-				printf("%s", emptySep);
+				printf("%s", sep);
 				funcs[j].f(args);
+				sep = ", ";
+				break;
 			}
 			j++;
 		}
-		emptySep = sep;
 		i++;
 	}
-	va_end(args);
 	printf("\n");
+	va_end(args);
 }
