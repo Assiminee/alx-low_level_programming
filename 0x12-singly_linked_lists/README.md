@@ -13,6 +13,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 + How to build and use linked lists
 
 ## More Info
+Please use this data structure for this project:
 ```
 /**
  * struct list_s - singly linked list
