@@ -24,10 +24,6 @@ void print_binary(unsigned long int n)
 			tmp *= 2;
 			tmp2++;
 		}
-		if (tmp > n)
-		{
-			tmp2--;
-		}
 		for (i = tmp2 - 1; (int)i >= 0; i--)
 		{
 			b = 1UL << i;
