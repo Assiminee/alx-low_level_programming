@@ -26,7 +26,7 @@ void print_binary(unsigned long int n)
 		}
 		for (i = tmp2 - 1; (int)i >= 0; i--)
 		{
-			b = 1 << i;
+			b = 1UL << i;
 			if (b & n)
 			{
 				f = 1;
