@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 	unsigned long int tmp = 1;
 	unsigned long int tmp2 = 1;
 	unsigned long int b;
-	int f = 0;	
+	int f = 0;
 
 	if (n == 0)
 	{
@@ -19,12 +19,12 @@ void print_binary(unsigned long int n)
 	}
 	else
 	{
-		while(tmp < n)
+		while (tmp < n)
 		{
 			tmp *= 2;
 			tmp2++;
 		}
-		for(i = tmp2 - 1; (int)i >= 0; i--)
+		for (i = tmp2 - 1; (int)i >= 0; i--)
 		{
 			b = 1 << i;
 			if (b & n)
