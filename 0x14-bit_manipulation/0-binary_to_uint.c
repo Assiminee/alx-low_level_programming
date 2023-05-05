@@ -8,10 +8,8 @@
 unsigned int binary_to_uint(const char *b)
 {
 	const char *ptr = b;
-	size_t length = 0;
-	unsigned int num = 0;
-	int power;
-	unsigned int num2;
+	int power, length = 0;
+	unsigned int num2, num = 0;
 
 	if (b == NULL)
 		return (0);
