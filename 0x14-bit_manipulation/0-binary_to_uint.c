@@ -21,30 +21,11 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] == '1')
 		{
-			res += power(ptrLen - 1 - i);
+			res += 1 << (ptrLen - 1 - i);
 		}
 	}
 
 	return (res);
-}
-
-/**
- * power - calculates 2 to the power of n
- * @n: the power to which 2 is raised
- *
- * Return: 2 to the power of n
- */
-unsigned int power(size_t n)
-{
-	size_t j;
-	unsigned int p = 1;
-
-	for (j = 0; j < n; j++)
-	{
-		p *= 2;
-	}
-
-	return (p);
 }
 
 /**
