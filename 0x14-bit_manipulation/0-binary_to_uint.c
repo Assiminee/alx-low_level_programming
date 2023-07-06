@@ -39,6 +39,9 @@ size_t len(const char *b)
 	size_t i = 0;
 	const char *ptr = b;
 
+	if (b == NULL)
+		return 0;
+
 	while (*ptr != '\0')
 	{
 		if (*ptr != '0' && *ptr != '1')
