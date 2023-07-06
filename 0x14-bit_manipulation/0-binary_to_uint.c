@@ -40,7 +40,7 @@ size_t len(const char *b)
 	const char *ptr = b;
 
 	if (b == NULL)
-		return 0;
+		return (0);
 
 	while (*ptr != '\0')
 	{
