@@ -61,7 +61,12 @@ int main(int argc, char *argv[])
 	close_file(file_to);
 	return (0);
 }
-
+/**
+ * close_file - closes a file
+ * @fd: file descriptor
+ *
+ * Return: void
+ */
 void close_file(int fd)
 {
 	int closing_stat;
@@ -73,13 +78,23 @@ void close_file(int fd)
 		exit(100);
 	}
 }
-
+/**
+ * err_handling_file_from - handles the case where file can't be read
+ * @filename: name of the file
+ *
+ * Return: void
+ */
 void err_handling_file_from(char *filename)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 	exit(98);
 }
-
+/**
+ * err_handling_file_to - handles case where writing to a file fails
+ * @filename: name of the file
+ *
+ * Return: void
+ */
 void err_handling_file_to(char *filename)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
