@@ -23,7 +23,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-
 	charsRead = read(fd, buff, letters);
 	if (charsRead == -1)
 	{
@@ -45,8 +44,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(fd);
 	free(buff);
 	if (charsWritten != charsRead)
-	{
 		return (0);
-	}
 	return (charsWritten);
 }
