@@ -3,6 +3,9 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdbool.h>
+void close_file(int fd);
+void err_handling_file_from(char *filename);
+void err_handling_file_to(char *filename);
 /**
  * main - main function
  * @argc: number of arguments passed
@@ -10,9 +13,6 @@
  *
  * Return: 0
  */
-void close_file(int fd);
-void err_handling_file_from(char *filename);
-void err_handling_file_to(char *filename);
 int main(int argc, char *argv[])
 {
 	int file_from, file_to;
