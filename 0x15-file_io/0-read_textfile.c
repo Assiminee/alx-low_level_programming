@@ -34,16 +34,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		count = write(STDOUT_FILENO, buff + charsWritten, charsRead - charsWritten);
 		if (count == -1)
-		{
-			close(fd);
-			free(buff);
-			return (0);
-		}
+			break;
 		charsWritten += count;
 	}
 	close(fd);
 	free(buff);
-	if (charsWritten != charsRead)
+	if (charsWritten != charsRead || count == -1)
 		return (0);
 	return (charsWritten);
 }
