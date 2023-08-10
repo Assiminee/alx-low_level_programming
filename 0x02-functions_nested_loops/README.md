@@ -1,52 +1,42 @@
 # 0x02. C - Functions, nested loops
 ### This directory contains various C files that demonstrate basic programming concepts in C, particularly focusing on functions and nested loops.
 
-# 0. _putchar
 ## [0-putchar.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/0-putchar.c)
 
 A C program that prints _putchar.
 
-# 1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 ## [1-alphabet.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/1-alphabet.c)
 
 A C program that prints the alphabet.
 
-# 2. 10 x alphabet
 ## [2-print_alphabet_x10.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/2-print_alphabet_x10.c)
 
 A C program that prints the alphabet 10 times.
 
-# 3. islower
 ## [3-islower.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/3-islower.c)
 
 A C function that checks if a character is lowercase.
 
-# 4. isalpha
 ## [4-isalpha.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/4-isalpha.c)
 
 A C function that checks if a character is an alphabet.
 
-# 5. Sign
 ## [5-sign.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/5-sign.c)
 
 A C function that prints the sign of a number.
 
-# 6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you
 ## [6-abs.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/6-abs.c)
 
 A C function that computes the absolute value of an integer.
 
-# 7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
 ## [7-print_last_digit.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/7-print_last_digit.c)
 
 A C function that prints the last digit of an integer.
 
-# 8. I'm federal agent Jack Bauer, and today is the longest day of my life
 ## [8-24_hours.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/8-24_hours.c)
 
 A C program that prints every minute of the day.
 
-# 9. Learn your times table
 ## [9-times_table.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/9-times_table.c)
 
 A C program that prints the 9 times table, starting with 0.
@@ -64,17 +54,14 @@ A C program that prints the 9 times table, starting with 0.
 0,  9, 18, 27, 36, 45, 54, 63, 72, 81
 ```
 
-# 10. a + b
 ## [10-add.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/10-add.c)
 
 A C function that returns the sum of two integers.
 
-# 11. 98 Battery Street, the OG
 ## [11-print_to_98.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/11-print_to_98.c)
 
 A C program that prints all natural numbers from an input number to 98.
 
-# 12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
 ## [100-times_table.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x02-functions_nested_loops/100-times_table.c)
 
 A C program that prints the n times table, starting with 0.
