@@ -8,7 +8,7 @@ A C function that checks if a character is uppercase.
 ## [2-mul.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x04-more_functions_nested_loops/1-isdigit.c)
 A C function that multiplies two integers.
 
-## [3-print_numbers.c](
+## [3-print_numbers.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x04-more_functions_nested_loops/3-print_numbers.c)
 A C function that prints numbers from 0 to 9.
 
 ## [4-print_most_numbers.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x04-more_functions_nested_loops/3-print_numbers.c)
