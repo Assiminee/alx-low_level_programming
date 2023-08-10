@@ -1,5 +1,5 @@
 # 0x07-pointers_arrays_strings
-### This directory contains various C files that further explore the concepts of pointers, arrays, and strings in C programming.
+### This directory contains a set of C files that delve deeper into the concepts of pointers, arrays, and string manipulation in C programming. These files include functions which are recreations of various string manipulation functions.
 
 ## Files Description
 ### [0-memset.c](https://github.com/Assiminee/alx-low_level_programming/blob/main/0x07-pointers_arrays_strings/0-memset.c)
