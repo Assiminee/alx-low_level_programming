@@ -2,10 +2,11 @@
 
 /**
  * hash_table_set - adds element to hash table
- * @ht: hash table to add or update
+ * @ht: hash table to add to or update
  * @key: key to add
  * @value: value to associate with key
- * Return: 1 or 0 if succeed or fail
+ *
+ * Return: 1 if succeeds, else 0
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
