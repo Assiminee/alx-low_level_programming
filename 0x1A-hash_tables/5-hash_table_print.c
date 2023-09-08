@@ -9,7 +9,8 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *curr;
-	unsigned long int i;
+	unsigned int i;
+	bool delim = false;
 
 	if (!ht)
 		return;
@@ -20,9 +21,10 @@ void hash_table_print(const hash_table_t *ht)
 		curr = ht->array[i];
 		while(curr)
 		{
-			printf("'%s': '%s'", curr->key, curr->value);
-			if (i != ht->size - 1)
+			if (delim)
 				printf(", ");
+			printf("'%s': '%s'", curr->key, curr->value);
+			delim = true;
 			curr = curr->next;
 		}
 	}
