@@ -25,12 +25,12 @@ int interpolation_search(int *array, size_t size, int value)
 			value >= array[low] && value <= array[high]
 			)
 	{
-		if (high == low)
+		/*if (high == low)
 		{
 			if (value == array[high])
 				return (high);
 			return (-1);
-		}
+		}*/
 		pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
 
 		if (pos < size)
