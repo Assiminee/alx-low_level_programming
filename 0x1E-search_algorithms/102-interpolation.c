@@ -39,7 +39,7 @@ int interpolation_search(int *array, size_t size, int value)
 			break;
 
 		if (array[pos] == value)
-			return (pos);
+			return ((int)pos);
 
 		if (array[pos] > value)
 			high = pos - 1;
