@@ -33,11 +33,10 @@ int exponential_search(int *array, size_t size, int value)
 	printf("Value found between indexes [%ld] and [%ld]\n", left, right);
 
 	return (bin_search(array, left, right, value));
-	
 }
 
 /**
- * binary_search - performs a binary search on an array
+ * bin_search - performs a binary search on an array
  * @array: pointer to first element of array
  * @low: low bound of array
  * @high: high bound of array
